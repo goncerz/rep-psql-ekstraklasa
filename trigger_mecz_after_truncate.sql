@@ -1,0 +1,7 @@
+CREATE OR REPLACE TRIGGER mecz_after_truncate 
+AFTER TRUNCATE 
+ON mecz 
+FOR EACH STATEMENT 
+EXECUTE PROCEDURE mecz_after_truncate() 
+; 
+

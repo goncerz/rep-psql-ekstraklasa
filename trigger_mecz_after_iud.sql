@@ -1,0 +1,7 @@
+CREATE OR REPLACE TRIGGER mecz_after_iud 
+AFTER INSERT OR DELETE OR UPDATE 
+ON mecz 
+FOR EACH ROW 
+EXECUTE PROCEDURE mecz_after_iud() 
+; 
+
